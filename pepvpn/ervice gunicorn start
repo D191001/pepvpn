@@ -1,0 +1,18 @@
+[0;1;31m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Tue 2023-02-07 11:10:23 MSK; 11min ago
+TriggeredBy: [0;1;31m●[0m gunicorn.socket
+    Process: 67867 ExecStart=/pep_vpn/venv/bin/gunicorn --workers 5 --bind unix:/run/gunicorn.sock ghproj.wsgi:application [0;1;31m(code=exited, status=3)[0m
+   Main PID: 67867 (code=exited, status=3)
+        CPU: 1.784s
+
+Feb 07 11:10:23 vm511969 gunicorn[67867]: [2023-02-07 11:10:23 +0300] [67867] [WARNING] Worker with pid 67871 was terminated due to signal 15
+Feb 07 11:10:23 vm511969 gunicorn[67867]: [2023-02-07 11:10:23 +0300] [67867] [WARNING] Worker with pid 67872 was terminated due to signal 15
+Feb 07 11:10:23 vm511969 gunicorn[67867]: [2023-02-07 11:10:23 +0300] [67867] [INFO] Shutting down: Master
+Feb 07 11:10:23 vm511969 gunicorn[67867]: [2023-02-07 11:10:23 +0300] [67867] [INFO] Reason: Worker failed to boot.
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Consumed 1.784s CPU time.[0m
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Start request repeated too quickly.[0m
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Feb 07 11:10:23 vm511969 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gunicorn daemon.[0m
