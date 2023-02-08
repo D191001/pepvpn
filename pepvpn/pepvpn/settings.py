@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+from . import secrets
+
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-03$cww(m9ft#ptytf5$#6bp4*5_ke4*ol90gb70$(z!6d^(np_'
-
+SECRET_KEY = secrets.SECRET_KEY
+#SECRET_KEY = 'django-insecure-03$cww(m9ft#ptytf5$#6bp4*5_ke4*ol90gb70$(z!6d^(np_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['insidesoul.store', '91.149.233.104', 'localhost']
+ALLOWED_HOSTS = ['insidesoul.store', '91.149.233.104', 'localhost', '127.0.0.1']
 
 
 # Application definition
