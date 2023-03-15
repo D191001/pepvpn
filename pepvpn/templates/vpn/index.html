@@ -4,23 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{% static 'img/fav/fav.ico' %}" type="image">
-    {% comment %} <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/fav/apple-touch-icon.png' %}">
+    {% comment %} <link rel="icon" href="{% static 'img/fav/fav.ico' %}" type="image">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/fav/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/fav/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/fav/favicon-16x16.png' %}"> {% endcomment %}
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
-    {% comment %} <link rel="manifest" href="img/fav/site.webmanifest"> {% endcomment %}
-    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
-    {% comment %} <meta name="msapplication-TileColor" content="#da532c"> {% endcomment %}
-    
-
-
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/fav/favicon-16x16.png' %}">
     <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#ffffff"> {% endcomment %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/fav/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/fav/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favfavicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/fav/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'img/fav/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+
+
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <title>
       {% block title %} главаня в base.html {% endblock %}
@@ -30,20 +30,7 @@
     {% include 'includes/header.html' %}
       <main>
         {% block content %}
-          <h1><ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>(</h1>
+          <h1>Контент не подвезли :(</h1>
         {% endblock %}
       </main>
     {% include 'includes/footer.html' %}
