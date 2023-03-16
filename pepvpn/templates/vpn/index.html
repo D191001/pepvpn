@@ -10,12 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/fav/favicon-16x16.png' %}">
     <meta name="msapplication-TileColor" content="#000">
     <meta name="theme-color" content="#ffffff"> {% endcomment %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-
-
-    
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/fav/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/fav/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favfavicon-16x16.png' %}">
@@ -25,52 +20,26 @@
     <meta name="theme-color" content="#ffffff">
 
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/play.css' %}">
     <title>
-      {% block title %} главаня в base.html {% endblock %}
+      {% block title %} главаня {% endblock %}
     </title>
 </head>
   <body>
+    <div class="p-3 mb-2 bg-dark text-white">
     {% include 'includes/header.html' %}
       <main>
         {% block content %}
-        <div class="container">
-            <header>
-              <div class="playlist">
-                <i class="fa fa-bars"></i>
-              </div>
-              <div class="setting">
-                <i class="fa fa-cog"></i>
-              </div>
-            </header>
-            <main>
-              <div class="album-art">
-                <img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
-              </div>
-              <div class="player">
-                <i class="fa fa-repeat"></i>
-                <i class="fa fa-fast-backward"></i>
-                <i class="fa fa-play"></i>
-                <i class="fa fa-fast-forward"></i>
-                <i class="fa fa-random"></i>
-              </div>
-            </main>
-            <footer>
-              <div class="title">The Vines - Ride
-              </div>
-              <div class="time-tracker">
-                <div class="timer">
-                  <div class="bg">
-                  </div>
-                </div>
-                <div class="time">00:80</div>
-              </div>
-            </footer>
-          </div>
+        <p><strong>Здравстуйте!</strong></p>
+        <ol>
+            <li>Образовательный проект PEPVPN предоставляет неоценимую услугу сообществу, следуя за своими пользователями, чтобы получить доступ к информации и свободно выражать свое мнение. Предоставляя безопасную анонимную связь, с помощью которой люди могут общаться, не опасаясь цензуры или слежки, этот проект позволяет людям из всех слоев общества обмениваться идеями и участвовать в содержательном диалоге без последствий. Кроме того, он предлагает платформу для тех, кто, возможно, не имеет доступа к традиционным формам общения из-за географического положения или других обстоятельств, которые ограничивают их способность общаться с другими людьми онлайн. PEPVPN образовательного проекта действительно является активом в продвижении свободы слова и информации в Интернете.</li>
+            <li>Так как проект установлен на слабом сервере с ростом пользователей возможны проблемы с работой VPN, а может и вовсе закрытие проекта. Мы будем очень благодарны вам за любую сумму и просим вас сделать пожертвование. Если удастся собрать достаточную сумму денег мы добавим серверов из разных стран и увеличим их мощность.</li>
+            <li>Спасибо за ваше внимание.</li>
+        </ol>
         {% endblock %}
       </main>
     {% include 'includes/footer.html' %}
+    </div>
   </body>
 </html>

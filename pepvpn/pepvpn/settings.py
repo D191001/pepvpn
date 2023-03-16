@@ -11,11 +11,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = secrets.SECRET_KEY
-#SECRET_KEY = 'django-insecure-03$cww(m9ft#ptytf5$#6bp4*5_ke4*ol90gb70$(z!6d^(np_'
-# SECURITY WARNING: don't run with debug turned on in production!
+
+
 DEBUG = True
 
-ALLOWED_HOSTS = ['insidesoul.store', '91.149.233.104', 'localhost', '127.0.0.1']
+# DEBUG = False
+
+ALLOWED_HOSTS = [
+    'insidesoul.store',
+    '91.149.233.104',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -28,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'vpn.apps.VpnConfig',
+    'about.apps.AboutConfig',
 ]
 
 MIDDLEWARE = [

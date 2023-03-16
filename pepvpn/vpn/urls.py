@@ -5,5 +5,5 @@ from . import views
 app_name = 'vpn'
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
 ]
