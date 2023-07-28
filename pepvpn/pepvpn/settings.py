@@ -18,7 +18,8 @@ DEBUG = True
 # DEBUG = False
 
 ALLOWED_HOSTS = [
-    'insidesoul.store',
+    'trialapp.ru',
+    'www.trialapp.ru',
     '91.149.233.104',
     'localhost',
     '127.0.0.1'
